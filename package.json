@@ -1,20 +1,28 @@
 {
   "name": "server-script",
   "version": "1.0.0",
-  "description": "",
+  "description": "One command to setup NodeJS modern runtime.",
   "bin": {
     "server-script": "./bin/server-script.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Steven",
-  "license": "ISC",
+  "author": {
+    "email": "ineva@qq.com",
+    "name": "Steven",
+    "url": "http://ineva.cn"
+  },
+  "license": "MIT",
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-flow": "^6.23.0",
     "chokidar": "^1.7.0",
     "ps-tree": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iineva/node-server-script"
   }
 }
