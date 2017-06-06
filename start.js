@@ -4,14 +4,13 @@ const kill = require('./utils/kill')
 const spawn = require('child_process').spawn
 
 const appName = require(paths.appPackageJson).name
-const BABEL_NODE_PARH = __dirname + '/node_modules/.bin/babel-node'
 const presets = ['es2015', 'flow']
 
 function runApp() {
 
-  const app = spawn(BABEL_NODE_PARH, [
+  const app = spawn('babel-node', [
     '--presets',
-    presets.map(name=>`${__dirname}/node_modules/babel-preset-${name}`).join(','),
+    presets.join(','),
     paths.appIndexJs
   ], {stdio: 'inherit'})
 
